@@ -7,9 +7,9 @@ with open('day01_input.txt') as f:
     nums = f.readlines()
     nums = [int(n) for n in nums]
 
-    ################
-    ##|  Part 1  |##
-    ################
+    ##################
+    ###|  Part 1  |###
+    ##################
     for num in nums:
         if (2020 - num) in nums:
             answer = [num, 2020 - num]
@@ -18,9 +18,9 @@ with open('day01_input.txt') as f:
     print(f'[Part 1] Entries {answer[0]} and {answer[1]} have a sum of 2020 and a product of {answer[0]*answer[1]}.')
 
 
-    ################
-    ##|  Part 2  |##
-    ################
+    ##################
+    ###|  Part 2  |###
+    ##################
     for numA in nums:                               # super optimized algorithm. definitely not O(n^3).
         for numB in nums:
             for numC in nums:
